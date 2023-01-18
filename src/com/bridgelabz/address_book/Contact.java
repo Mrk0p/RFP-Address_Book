@@ -1,5 +1,7 @@
 package com.bridgelabz.address_book;
 
+import java.util.Scanner;
+
 public class Contact {
 
     private String firstName;
@@ -65,6 +67,35 @@ public class Contact {
     }
     public Contact(String firstName, String lastName,String address,String city,String state,String email,int zipcode,long phoneNumber){
 
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.zipcode = zipcode;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
+    public void getPersonDetails(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter First Name : ");
+        firstName = input.next();
+        System.out.print("Enter Lat Name : ");
+        lastName = input.next();
+        System.out.print("Enter Address : ");
+        address = input.next();
+        System.out.print("Enter City : ");
+        city = input.next();
+        System.out.print("Enter State : ");
+        state = input.next();
+        System.out.print("Enter Zipcode : ");
+        zipcode = input.nextInt();
+        System.out.print("Enter Phone number : ");
+        phoneNumber = input.nextLong();
+        System.out.print("Enter Email ID : ");
+        email = input.next();
     }
 
 }
+
+
