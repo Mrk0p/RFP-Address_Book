@@ -3,7 +3,6 @@ package com.bridgelabz.address_book;
 import java.util.Scanner;
 
 public class Contact {
-
     private String firstName;
     private String lastName;
     private String address;

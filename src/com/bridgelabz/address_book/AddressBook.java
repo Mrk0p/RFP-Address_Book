@@ -56,7 +56,6 @@ public class AddressBook {
                 break;
         }
     }
-
     @Override
     public String toString() {
         return "AddressBook{" +
